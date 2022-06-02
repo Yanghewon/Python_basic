@@ -53,6 +53,54 @@ raw_s1 = r'D:\python\test'
 print(raw_s1)
 print()
 
+# 멀티라인 입력
+# 역슬래쉬 사용
+multi_str = "blalblalblalblalblalblal" # 많은 텍스트를 입력할때
+# multi_str2 = 
+# '''
+# String
+# multi line
+# Test
+#'''        -> 이렇게 하는 것은 오류가 난다.
+multi_str2 = '''
+String
+multi line
+Test
+'''        # -> 이렇게 해주거나
+
+multi_str3 = \
+'''
+String
+Multi line
+Test
+'''         # -> 깔끔하게 해줄때는 '\'를 사용하면 됨
+
+print(multi_str2)
+print(multi_str3)
+
+# 문자열 연산
+str_o1 = "pyhon"
+str_o2 = "Apple"
+str_o3 = "How are you doing"
+str_o4 = "Seoul Deajeon Busan Jinju"
+
+print(str_o1 * 3) # 문자열을 곱하면 그 수 만큼 반복됨
+print(str_o1 + str_o2) # 문자열을 더하면 더한 문자열을 나열해줌
+print('y' in str_o1) # ''안에 들어가는 문자가 문자열에 있는지 물어보는 구문
+print('n' in str_o1)
+print('P' not in str_o2) # "not in"은 ''이 문자열에 들어가 있지 않나요?라고 물어보는 구문, 그렇기에 없으면 True가 나옴
+
+# 문자열 형 변환
+print(str(66), type(str(66))) # 숫자를 str에 넣어 문자열로 치환
+print(str(10.1))
+print(str(True), type(str(True)))
+
+# 문자열 함수(upper, isalnum, startswith, count, endswith, isalpha...)
+
+print("Capitalize: ", str_o1.capitalize()) # 첫번째 글자를 대문자로 바꿔주는 역할
+print("endswith?: ", str_o2.endswith("e")) # 끝 글자가 뭐로 끝나는지 확인할때
+print("replace", str_o1.replace("thon", 'Good')) # 문자열 중 ""에 들어있는 문자를 ''의 문자로 바꿈
+
 
 
 
