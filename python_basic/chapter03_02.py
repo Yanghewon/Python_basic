@@ -101,10 +101,38 @@ print("Capitalize: ", str_o1.capitalize()) # 첫번째 글자를 대문자로 �
 print("endswith?: ", str_o2.endswith("e")) # 끝 글자가 뭐로 끝나는지 확인할때
 print("replace", str_o1.replace("thon", 'Good')) # 문자열 중 ""에 들어있는 문자를 ''의 문자로 바꿈
 
+print("sorted: ", sorted(str_o1)) # 정렬해서 나온다
+print("split: ", str_o4.split(' ')) # ''에 들어오는 것을 기준으로 분리한다
 
+# 반복(시퀀스)
+im_str = "Good Boy!"
 
+print(dir(im_str)) # __iter__ (iter이 들어있으면 반복할 수 있다는 의미)
 
+# 출력
+for i in im_str:
+    print(i)
 
+# 슬라이싱
+str_sl = "Nice Python" # 글자수를 샐 때 0부터 시작한다
+
+print(len(str_sl)) # 글자수를 알려줌
+# 슬라이싱 연습
+print(str_sl[0:3]) # 0 1 2에 위치한 글자만 나온다(3뒤에 -1이 생략되어 있는 것으로 2째자리 숫자만 나옴)
+print(str_sl[5:11]) # = print(str_sl[5:]) -> :만 쓰게 되면 문자열의 끝까지 나오게 됨
+print(str_sl[:]) # 다 비워두면 처음부터 끝까지 나옴
+print(str_sl[:len(str_sl)]) # len을 사용해서 글자수를 넣은 경우 -1은 처리하지 않는다(본래 글자수 만큼 처리)
+print(str_sl[1:12:2]) # [1:12:2씩 띄워서 출력]
+print(str_sl[-5:]) # 숫자에 -가 붙으면 뒤에서부터 시작(-는 -1부터 시작)
+print(str_sl[1:-2])
+print(str_sl[::2])
+print(str_sl[::-1])
+
+# 아스키 코드(또는 유니코드)
+a= 'z' # 파이썬에는 알파벳에 맞는 번호가 있다
+
+print(ord(a)) # 알파벳 a에 맞는 아스키 코드를 알려줌
+print(chr(122))
 
 
 
