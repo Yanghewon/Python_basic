@@ -94,3 +94,52 @@ if id1 =='vip' or id2 == 'admin':
 
 if id2 == 'admin' and grade == 'platinum':
     print('최상위 관리자')
+
+# 예7
+# 다중조건문
+
+num = 75
+
+if num >= 90:
+    print('Grade : A') # elif (else if의 줄임말)
+elif num >= 80:
+    print('Grade : B')
+elif num >= 70:
+    print('Grade : c')
+else:
+    print('과락')
+
+# 예8
+# 중첩 조건문
+grade = 'A'
+total = 95
+
+if grade =='A':
+    if total >= 90:
+        print('장학금 100%')
+    elif total >= 80:
+        print('장학금 80%')
+    else:
+        print('장학금 50%')
+else:
+    print('장학금 없음')
+
+# in, not in
+
+q = [10, 20, 30]
+w = [70, 80, 90, 100]
+e = {"name": "Lee", "city": "Seoul", "grade": "A"}
+r = (10, 12, 14)
+
+print(15 in q)
+print(99 in w)
+print(12 not in r)
+print("name" in e)
+print("Seoul" in e.values()) # 값에 있는 것을 찾아낼 때 'values'를 넣어주면 됨
+
+
+
+
+
+
+
