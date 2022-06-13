@@ -19,6 +19,7 @@ for v3 in range(1, 11, 2): # 1~10까지 2칸씩 띄워서 출력
 print()
 
 # 1~1000 합
+
 sum1 = 0
 
 for v in range(1, 1001):
@@ -48,23 +49,91 @@ lotto_number = [11, 19, 21, 28, 36, 37]
 for n in lotto_number:
     print("Currnet number :", n)
 
-word = "Beautiful"
+# 예제3
+word = "Beautiful" # 문자열도 리스트돼서 하나씩 출력
 
 for s in word:
     print('word :', s)
 
+print()
+
+# 예제4
+
+my_info = {
+    "name": "Lee",
+    "Age": 33,
+    "City": "Seoul"
+}
+
+for k in my_info:
+    print('key :', k) # k를 넣으면 key를
+
+for k in my_info:
+    print('key :', my_info[k]) # my_info[k] my_info에 k를 넣어주면 밸류
+print()
+
+for v in my_info.values():
+    print('value :', v) # 이렇게로도 밸류 출력 가능
+
+# 예제5
+name = 'FineAppLE'
+
+for n in name:
+    if n.isupper(): # 대문자라면(islower=소문자)
+            print(n)
+    else:
+        print(n.upper()) # 대문자로 출력
+print()
+
+# break (break문을 만나면 실행 종료)
+
+numbers = [14, 3, 4, 7, 10, 24, 17, 2, 33, 15, 34, 36, 38]
+
+for num in numbers:
+    if num == 34:
+        print('Found : 34!')
+        break # 34를 찾으면 멈춤
+    else:
+        print('Not found :', num)
 
 
+# countinue
+
+lt = ["1", 2, 5, True, 4.3, complex(4)]
+
+for v in lt:
+    if type(v) is bool:
+        continue # 내가 설정한 값을 만나면 스킵시킬 수 있다
+    print("current type :", v, type(v))
+    print("multiply by 2 :", v * 3)
+print
+
+# for - else (결과값만 찾아서 알려줌)
+
+numbers = [14, 3, 4, 7, 10, 24, 17, 2, 33, 15, 34, 36, 38]
+
+for num in numbers:
+    if num == 24:
+        print("Found : 24")
+        break
+else:
+    print('Not found : 24') 
+
+# 구구단 출력
+
+for i in range(2, 10):
+    for j in range(1, 10):
+        print('{:4d}'.format(i*j), end='')
+    print()
 
 
+# 변환 예제
+name2 = 'Aceman'
 
-
-
-
-
-
-
-
+print('Reversed', reversed(name2))
+print('List', list(reversed(name2)))
+print('Tuple', tuple(reversed(name2)))
+print('Set', set(reversed(name2))) # 집합은 순서 x
 
 
 
