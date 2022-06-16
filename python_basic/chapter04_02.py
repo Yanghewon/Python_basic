@@ -135,33 +135,3 @@ print('List', list(reversed(name2)))
 print('Tuple', tuple(reversed(name2)))
 print('Set', set(reversed(name2))) # 집합은 순서 x
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

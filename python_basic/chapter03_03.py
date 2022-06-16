@@ -30,7 +30,7 @@ print('e - ', e[-1][1:3])
 print('>>>>>')
 print('c + d', c + d) # 순서대로 나열됨
 print('c * 3', c * 3) # 곱한 순서만큼 반복
-print("'Test' + c[0", 'Test' + str(c[0]))
+print("'Test' + c[0] - ", 'Test' + str(c[0]))
 
 # 값 비교
 print(c == c[:3]+ c[3:])
@@ -68,7 +68,7 @@ print()
 a = [5, 2, 3, 1, 4]
 
 print('a - ', a)
-a.append(10) #마지막 데이터 삽입 함수
+a.append(10) # 마지막 데이터 삽입 함수
 print('a - ', a)
 
 a.sort() # 오름차순으로 정렬(정렬)

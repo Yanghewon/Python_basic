@@ -47,7 +47,7 @@ print('f - ', type(f), f)
 print()
 
 # 출력
-print('a - ', a['name']) #키가 존재x ->에러발생
+print('a - ', a['name']) # 키가 존재x ->에러발생
 print('a - ', a.get('name')) # 키가 존재x ->None처리 (키가 없어도 프로그램이 돌아감으로 많이 사용)
 print('b - ', b[0])
 print('b - ', b.get(0))
